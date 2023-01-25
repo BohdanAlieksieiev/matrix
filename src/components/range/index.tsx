@@ -7,6 +7,6 @@ interface Props {
 
 export const Range = ({ onChange, value }: Props) => {
     return <div className="container-range">
-        <input type="range" onChange={(event) => onChange(+event.target.value)} value={value} max={50} min={1} />
+        <input type="range" onChange={(event) => onChange(+event.target.value)} value={value} max={100} min={1} />
     </div>
 }
