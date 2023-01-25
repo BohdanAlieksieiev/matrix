@@ -1,6 +1,9 @@
-import { Props } from './props'
-
 import './styles.css'
+
+interface Props {
+    onChange: (value: number) => void
+    value: number
+}
 
 export const Range = ({ onChange, value }: Props) => {
     return <div className="container-range">

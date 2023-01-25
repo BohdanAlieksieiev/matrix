@@ -3,8 +3,8 @@ import { MatrixContext } from "../../../context/matrixContext";
 
 interface Props {
   text?: string;
-  value?: number;
-  id?: number;
+  value: number;
+  id: number;
   row: number;
   column: number;
 }
@@ -42,9 +42,9 @@ export const CellBody = ({ text, value, row, column, id }: Props) => {
         color: IS_NEAREST_AMOUNT ? `green` : 'black',
         fontWeight: IS_NEAREST_AMOUNT ? 'bold' : 'unset'
       }}
-      onClick={() => value && updateCell(row, column, value + 1)}
-      onMouseEnter={() => value && setNearestAmount(value)} /// TODO: constant nearest
-      onMouseLeave={() => value && setNearestAmount(undefined)}
+      onClick={() => updateCell(id, value + 1)}
+      onMouseEnter={() => setNearestAmount(value)}
+      onMouseLeave={() => setNearestAmount(undefined)}
     >
       {text}
       {IS_CURRENT_ROW_HOVER && `→ ${value && hover && calcPercent()}%`}
