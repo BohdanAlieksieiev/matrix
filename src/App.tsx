@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <AuthContextProvider>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/matrix" element={<Index />} />
         </Routes>
       </AuthContextProvider>
     </BrowserRouter>
