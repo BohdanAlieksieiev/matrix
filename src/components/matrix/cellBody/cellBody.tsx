@@ -20,7 +20,7 @@ export const CellBody = ({ text, value, row, column, id }: Props) => {
   };
 
   const IS_CURRENT_ROW_HOVER = value && hover ? row === hover.row : false;
-  const IS_NEAREST_AMOUNT = nearests.find(nearest => nearest.id === id)
+  const IS_NEAREST_AMOUNT = nearests.find(nearest => nearest?.id === id)
 
   const styleBackgroundColor = () => {
     if (IS_CURRENT_ROW_HOVER) {
