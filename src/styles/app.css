@@ -9,3 +9,38 @@ body {
 .range-text {
   font-size: 20px
 }
+
+.container-matrix {
+  max-width: 1200px;
+  overflow-x: scroll;
+}
+
+.input-number {
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.range-text-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-gap-index {
+  display: grid;
+  gap: 20px 0
+}
+
+.button {
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container-x {
+  margin-top: 10px;
+}

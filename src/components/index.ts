@@ -1,2 +1,5 @@
 export * from './range'
 export * from './matrix'
+export * from './number'
+export * from './button'
+export * from './input'

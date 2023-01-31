@@ -9,7 +9,7 @@ interface Props {
   column: number;
 }
 
-export const CellBody = ({ text, value, row, column, id }: Props) => {
+export const CellBody = ({ text, value, row, id }: Props) => {
   const { hover, updateCell, setNearestAmount, nearests } = useContext(MatrixContext);
 
   const calcPercent = () => {
